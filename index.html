@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title> Laksh </title>
+        <link rel="stylesheet" href="script.css">
+        <script src="https://kit.fontawesome.com/f1cff9ad0c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container"></div>
+            <nav> <img src="pic/ddd.png" class="logo"> 
+                <ul id="sidemenu">
+                    
+                   <li><a    href="#header">Home</a></li>
+                   <li><a    href="#about">About</a></li>
+                   <li><a    href="#services">Services</a></li>
+                   <li><a    href="#portfolio">Portfolio</a></li>
+                   <li><a    href="#contact">Contact</a></li>
+                   <i class="fas fa-times"onclick="closemenu()"></i>
+                </ul> 
+                <i class="fas fa-bars"onclick="openmenu()"></i>                                                                                                                                                                                                                                                          
+               
+               
+               </nav> 
+               <div   class="header-text">
+                  <p>  UI/UX Designer</p>
+                   <h1> Hi, I'm <span> Laksh</span></h1>
+                    <h2>To obtain a career in the field of computer
+                    science where I can strengthen my knowledge
+                    and skills for the development of both the
+                    company and myself . </h2> 
+   
+               </div>
+               
+           </div>
+            <!------------------------------------------about---------------------->
+        <div id="about">
+            <div class="container"></div>
+            <div class="row">
+                <div class="about-col-1">
+                  <!--<img src="pic/lak.png">---->
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" >About Me </h1> <br> <br>
+                    <p> <h2>To work in a healthy and progressive organization where I will get an
+                        opportunity to use my skills at their best level, which will be beneficial
+                        for the growth of organization as well as for my own professional and
+                        personal growth.</h2></p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Technical skills')">Technical  skills</p>
+                            <p class="tab-links"onclick="opentab('Education')"> Education</p>
+                           <!---- <p class="tab-links"onclick="opentab('INTERPERSONAL SKILLS')"> INTERPERSONAL SKILLS</p>-->
+                            
+                        </div>
+                        <div class="tab-contents active-tab" id="Technical skills">
+                            <ul>
+                                <li> Language : C , java , HTML , CSS </li> <br>
+                                <li>  Database : My SQL</li><br>
+                               
+                               
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li>  Bachelors in Computer Application <br>
+                                    DAV COLLEGE ABHOR Abohar , Punjab , India<br>
+                                    2020-2023<br>
+                                    Per :82.08 </li> <br>
+                                <li>  Senior Secondary Education <br> 
+                                    Govt.Model Sen. Sec. School Fazilka , Punjab ,India<br>
+                                    2019-2020<br>
+                                    Per : 70
+                                    </li><br>
+                                <li>  Matriculation Education <br>
+                                    Seth Hans Raj Kamra Memorial Saints Public High School Mandi Ladhuka, Punjab ,India <br>
+                                    2017-2018<br>
+                                    Per : 79</li><br>
+                            </ul>
+                        <!--</div> <div class="tab-contents" id="INTERPERSONAL SKILLS">
+                            <ul>
+                                <li>  Always ready to learn new things and have a “can do” attitude towards solving problems.</li> <br>
+                                <li>  Empathetic listener and persuasive speaker.</li><br>
+                                <li> Can handle different problems and situations in a calm manner</li><br>
+                            </ul>
+                        </div>-->
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                
+                for( tablink of tablinks ){
+                    tablink.classList.remove("active-link");
+                }
+                
+                for( tabcontent  of tabcontents ){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            
+            }
+            
+            
+            
+            
+            
+                    </script>
+
+
+        <!------------------services-->
+        <div id="services">
+
+            <div class="container">
+                <h1 class="sub-title"> My services </h1>
+                <div class="services-list">
+                    <div> 
+                        <i class="fa-solid fa-code"></i>
+                        <h2>  web design</h2>
+
+                    </div>
+                    <div> 
+                        <i class="fa-sharp fa-solid fa-diagram-project"></i>
+                        <h2> Project<h2>
+                        
+                    </div>
+                    <div> 
+                        <i class="fa-solid fa-database"></i>
+                        <h2> SQL</h2>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+         <!---------portfolio-------->
+
+
+
+         <div id="portfolio">
+            <div class="container">
+            <h1 class="sub-title"> My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src ="pic/1st page filled.png">
+                    <div class="layer">
+            
+            
+                        <h3> Restaurant point of sale</h3>
+                        <p>Technology : vb.net , ado.net, ms access</p>
+                        <a href="https://docs.google.com/document/d/1dX5BvivQoiAZSc8CV3qwckRnE6UR2zt3/edit?usp=sharing&ouid=106509352533661904072&rtpof=true&sd=true"><i class="fa-solid fa-utensils"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src ="pic/cali.png">
+                    <div class="layer">
+            
+            
+                        <h3> Calculator</h3>
+                        <p>Technology : HTML, CSS, JS
+                            Functionality:
+                            1. Arithmetic operations
+                            2. With AC and DE</p>
+                        <a href="https://drive.google.com/file/d/1XRZE3-u6Lyn28ohWTeDBFwgNpgR8jB9s/view?usp=sharing"><i class="fa-solid fa-calculator"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src ="pic/port.jpg">
+                    <div class="layer">
+            
+            
+                        <h3> Portfolio </h3>
+                        <p>Technology : HTML, CSS, JS</p>
+                        <a href="#"><i class="fa-solid fa-file"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="# " class="btn"> see more</a>
+            
+            </div>
+                 </div>
+<!----------contact-->
+<div id="contact">
+
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">  contact Me</h1>
+               <p><i class="fa-regular fa-envelope"></i>     lakshkhunger01@gmail.com</p>
+                  <p> <i class="fa-solid fa-phone"></i>   +91 7589019321</p>
+                   <div class="social-icons">
+                   
+                    <a href="
+                    https://www.linkedin.com/in/laksh-khunger-57929a251"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/laksh-k"><i class="fa-brands fa-github"></i></a>
+                   
+
+                  </div> 
+                  <a href="pic/Laksh (1).pdf" download class="btn btn2"> Download cv</a>
+
+
+
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <input type="text " name="Name" placeholder="Your Name" required>
+                <input type="email " name="Email" placeholder="Your Email " required>
+                 <textarea name="message"  rows="6" placeholder= "Your message" required></textarea>
+                 <button type ="submit" class="btn btn2">submit</button>
+
+        
+            </form>
+            <br>
+            
+        </div>
+       <!---- <div class="copyright">
+            <p>  copyright laksh <i class="fa-solid fa-heart"></i></p>
+          </div>-->
+    </div>
+</div>
+
+
+
+
+    
+    
+           
+            <script>
+
+                var sidemenu = document.getElementById("sidemenu");
+                function openmenu(){
+
+                    sidemenu.style.right ="0";
+                }
+                function closemenu(){
+
+                    sidemenu.style.right ="-200px";
+                  }
+            </script>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbziEvxozJWwGVSiHuoTcIraQpUxTAN-PiD5k0D3YQ8baY-0yAUxivNAIrMVO5S8_rRC/exec'
+                const form = document.forms['submit-to-google-sheet']
+              const msg  = document.getElementById("msg");
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response =>   { 
+                        
+                        setTimeout(function(){ msg.innerHTML=" " 
+                     } ,5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>
+
+</body>
+</html>
+
